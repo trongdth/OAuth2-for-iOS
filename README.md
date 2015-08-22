@@ -12,9 +12,13 @@ IMPROVEMENTS
 -------
  1. UI:
    + Use autolayout.
-   + 
+   + Use ARC.
+   + Make UX better.
  2. Authorization:
- 3. 
+   + Add initWithDict function for OAuthRequestController 
+   + Add Authorization key in order to avoid some website requires it.
+ 3. More things:
+   + Fix warning and some small issues for LROAuth2Client
 
 
 USAGE
