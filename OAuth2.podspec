@@ -9,22 +9,21 @@
 Pod::Spec.new do |s|
   s.name             = "OAuth2"
   s.version          = "0.1.0"
-  s.summary          = "A short description of OAuth2."
+  s.summary          = "It's used for OAuth2 authorization."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
+  s.description      = "It's a library on iOS which is suitable for OAuth2. It supports authorization all websites which are using OAuth2 such as: smarthings, uber, fitbit, delivery, etc..."
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/OAuth2"
+  s.homepage         = "https://github.com/trongdth/OAuth2-for-iOS"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Trong Dinh" => "trongdth@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/OAuth2.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/trongdth/OAuth2-for-iOS.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/trongdth'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

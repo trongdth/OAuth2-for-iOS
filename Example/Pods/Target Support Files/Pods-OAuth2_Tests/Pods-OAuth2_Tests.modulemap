@@ -1,0 +1,6 @@
+framework module Pods_OAuth2_Tests {
+  umbrella header "Pods-OAuth2_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
