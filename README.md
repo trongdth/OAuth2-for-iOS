@@ -34,7 +34,7 @@ It's a library on iOS which is suitable for OAuth2. It supports authorization al
 
  2. Declare OAuthRequestController:
 
-'''
+```objective-c
 NSMutableDictionary *dictService = [NSMutableDictionary dictionary];
 [dictService setObject:@"https://www.fitbit.com/oauth2/authorize" forKey:kOAuth_AuthorizeURL];
 [dictService setObject:@"https://api.fitbit.com/oauth2/token" forKey:kOAuth_TokenURL];
@@ -50,15 +50,15 @@ oauthController.delegate = self;
 [self presentViewController:oauthController animated:YES completion:^{
 
 }];
-'''
+```
 
 3. Implement OAuthRequestController method to obtain accesstoken:
 
-'''
+```objective-c
 - (void)didAuthorized:(NSDictionary *)dictResponse {
     NSLog(@"%@", dictResponse);
 }
-'''
+```
 
 
 
