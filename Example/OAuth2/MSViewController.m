@@ -13,7 +13,7 @@
 
 @end
 
-@implementation MSViewController
+@implementation MSViewController <OAuthRequestControllerDelegate>
 
 #pragma mark - view life cycle
 
@@ -49,6 +49,12 @@
     [self presentViewController:oauthController animated:YES completion:^{
         
     }];
+}
+
+#pragma mark - OAuthRequestControllerDelegate method
+
+- (void)didAuthorized:(NSDictionary *)dictResponse {
+    NSLog(@"%@", dictResponse);
 }
 
 @end

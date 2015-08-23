@@ -30,7 +30,36 @@ It's a library on iOS which is suitable for OAuth2. It supports authorization al
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+ 1. To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+ 2. Declare OAuthRequestController:
+
+'''
+NSMutableDictionary *dictService = [NSMutableDictionary dictionary];
+[dictService setObject:@"https://www.fitbit.com/oauth2/authorize" forKey:kOAuth_AuthorizeURL];
+[dictService setObject:@"https://api.fitbit.com/oauth2/token" forKey:kOAuth_TokenURL];
+[dictService setObject:@"YOUR CLIENT ID" forKey:kOAuth_ClientId];
+[dictService setObject:@"YOUR SECRET KEY" forKey:kOAuth_Secret];
+[dictService setObject:@"YOUR CALLBACK URL" forKey:kOAuth_Callback];
+[dictService setObject:@"activity heartrate location nutrition profile settings sleep social weight" forKey:kOAuth_Scope];
+
+
+OAuthRequestController *oauthController = [[OAuthRequestController alloc] initWithDict:dictService];
+oauthController.view.frame = self.view.frame;
+oauthController.delegate = self;
+[self presentViewController:oauthController animated:YES completion:^{
+
+}];
+'''
+
+3. Implement OAuthRequestController method to obtain accesstoken:
+
+'''
+- (void)didAuthorized:(NSDictionary *)dictResponse {
+    NSLog(@"%@", dictResponse);
+}
+'''
+
 
 
 ## Installation
