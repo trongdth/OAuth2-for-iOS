@@ -21,11 +21,10 @@
 		8403D62C5FBFDFD61DA37B352AAC0249 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB4096AC4B05AA934A94FB47559B321 /* Foundation.framework */; };
 		8AFDDE6385098B5BBA1F86FF3E053833 /* LRURLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8689002AF3737DF814619EDE328E4FD1 /* LRURLRequestOperation.m */; };
 		90777F100AE27A9B1115311D82296465 /* NSURL+QueryInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D5436729587A9AB45646151137AE0F /* NSURL+QueryInspector.m */; };
-		933E6A5CC3F5CD7140A5D95FB2BCA90B /* OAuth2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4E836ADFCBC2D5D847B7BEC3E41385CE /* OAuth2.bundle */; };
 		A783E7E0140CC2FF855FC9BDCDF6D603 /* OAuthRequestController.h in Headers */ = {isa = PBXBuildFile; fileRef = E105DB7BD13A7B007C34E923FDFC62B6 /* OAuthRequestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A93E327F4D9DBDE43357F6BC9ACF6F8C /* NSURL+QueryInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F8EB7E57D4772EAB43EFE90CF95A84 /* NSURL+QueryInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABF17875A12DE4F8021785283CC21477 /* NSDictionary+QueryString.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF67098734E8076DCC4191AD78246DE /* NSDictionary+QueryString.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B152360A1B8C34640063F3A1 /* OAuthRequestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1554120A39DD901BEFE6F0D2DB29C8D7 /* OAuthRequestController.xib */; };
+		B15236401B8C400F0063F3A1 /* OAuthRequestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1554120A39DD901BEFE6F0D2DB29C8D7 /* OAuthRequestController.xib */; };
 		B7C95C710B3D65CA52572216E7672269 /* Pods-OAuth2_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22642CEBCAAD2E7F50B0EA80C627A942 /* Pods-OAuth2_Example-dummy.m */; };
 		B93DF6E59D9F4E2035245CD5BE2D1B68 /* Pods-OAuth2_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BAB1878DD1B37684FE9B1DCD333DC01 /* Pods-OAuth2_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAFA82931F26C55D68FFAA1775D9A97E /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 6081992F14AFEDEDA8242A4780B98E71 /* Base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -475,8 +474,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B152360A1B8C34640063F3A1 /* OAuthRequestController.xib in Resources */,
-				933E6A5CC3F5CD7140A5D95FB2BCA90B /* OAuth2.bundle in Resources */,
+				B15236401B8C400F0063F3A1 /* OAuthRequestController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,7 +25,7 @@
 
 - (id)init;
 {
-    if (self = [super initWithNibName:@"OAuthRequestController" bundle:nil]) {
+    if (self = [super initWithNibName:@"OAuthRequestController" bundle:[NSBundle bundleForClass:[OAuthRequestController class]]]) {
         oauthClient = [[LROAuth2Client alloc] initWithClientID:@"76413906-82f8-4bee-954f-1439de58c485"
                                                         secret:@"30e69d27-d0c7-42a1-8673-e33b55d395e3" redirectURL:[NSURL URLWithString:@"robotbase://authorize"]];
         oauthClient.userURL  = [NSURL URLWithString:@"https://graph.api.smartthings.com/oauth/authorize"];
@@ -38,7 +38,7 @@
 }
 
 - (id)initWithDict:(NSDictionary *)dict {
-    if (self = [super initWithNibName:@"OAuthRequestController" bundle:[NSBundle mainBundle]]) {
+    if (self = [super initWithNibName:@"OAuthRequestController" bundle:[NSBundle bundleForClass:[OAuthRequestController class]]]) {
         oauthClient = [[LROAuth2Client alloc] initWithClientID:[dict objectForKey:kOAuth_ClientId]
                                                         secret:[dict objectForKey:kOAuth_Secret]
                                                    redirectURL:[NSURL URLWithString:[dict objectForKey:kOAuth_Callback]]];
