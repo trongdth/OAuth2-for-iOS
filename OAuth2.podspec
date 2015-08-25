@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "OAuth2"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "It's used for OAuth2 authorization."
 
 # This description is used to generate tags and improve search results.
@@ -30,10 +30,11 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'OAuth2' => ['Pod/Assets/*.png', "Pod/Classes/OAuthRequestController.xib"]
+    'OAuth2' => ['Pod/Assets/*.png', 'Pod/Classes/*.xib', 'Pod/Classes/*.nib']
   }
+  s.resources = ['Pod/Assets/*.png', 'Pod/Classes/*.xib', 'Pod/Classes/*.nib']
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
