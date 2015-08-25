@@ -7,13 +7,12 @@
 //
 
 #import "MSViewController.h"
-#import "OAuthRequestController.h"
 
 @interface MSViewController ()
 
 @end
 
-@implementation MSViewController <OAuthRequestControllerDelegate>
+@implementation MSViewController
 
 #pragma mark - view life cycle
 

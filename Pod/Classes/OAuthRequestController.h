@@ -9,6 +9,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LROAuth2ClientDelegate.h"
+#import "OAuthKey.h"
 
 @protocol OAuthRequestControllerDelegate <NSObject>
 
