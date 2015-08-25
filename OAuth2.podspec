@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "OAuth2"
-  s.version          = "0.1.8"
+  s.version          = "0.1.9"
   s.summary          = "It's used for OAuth2 authorization."
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes/**/*.{h,m}'
   s.resource_bundles = {
     'OAuth2' => ['Pod/Classes/OAuthRequestController.xib']
   }
