@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'OAuth2' => ['Pod/Classes/OAuthRequestController.xib']
   }
-  s.resources = ['OAuth2/Pod/Classes/OAuthRequestController.xib']
+  s.resources = ['Pod/Classes/OAuthRequestController.xib']
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
