@@ -72,7 +72,14 @@
             [params setValue:[additionalParameters valueForKey:key] forKey:key];
         }
     }
-    NSURL *fullURL = [NSURL URLWithString:[[self.userURL absoluteString] stringByAppendingFormat:@"?%@", [params stringWithFormEncodedComponents]]];
+    
+    NSURL *fullURL;
+    if ([[self.userURL absoluteString] containsString:@"?"]) {
+        fullURL = [NSURL URLWithString:[[self.userURL absoluteString] stringByAppendingFormat:@"&%@", [params stringWithFormEncodedComponents]]];
+    } else {
+        fullURL = [NSURL URLWithString:[[self.userURL absoluteString] stringByAppendingFormat:@"?%@", [params stringWithFormEncodedComponents]]];
+    }
+    
     NSMutableURLRequest *authRequest = [NSMutableURLRequest requestWithURL:fullURL];
     [authRequest setHTTPMethod:@"GET"];
     
