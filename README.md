@@ -52,7 +52,7 @@ oauthController.delegate = self;
 }];
 ```
 
-3. Implement OAuthRequestController method to obtain accesstoken:
+ 3. Implement OAuthRequestController method to obtain accesstoken:
 
 ```objective-c
 - (void)didAuthorized:(NSDictionary *)dictResponse {
