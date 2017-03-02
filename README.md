@@ -2,7 +2,7 @@
 
 It's a library on iOS which is suitable for OAuth2. It supports authorization all websites which are using OAuth2 such as: smarthings, uber, fitbit, delivery, etc...
 
-[![CI Status](http://img.shields.io/travis/Trong Dinh/OAuth2.svg?style=flat)](https://travis-ci.org/Trong Dinh/OAuth2)
+[![Build Status](https://travis-ci.org/trongdth/OAuth2-for-iOS.svg?branch=master)](https://travis-ci.org/trongdth/OAuth2-for-iOS)
 [![Version](https://img.shields.io/cocoapods/v/OAuth2.svg?style=flat)](http://cocoapods.org/pods/OAuth2)
 [![License](https://img.shields.io/cocoapods/l/OAuth2.svg?style=flat)](http://cocoapods.org/pods/OAuth2)
 [![Platform](https://img.shields.io/cocoapods/p/OAuth2.svg?style=flat)](http://cocoapods.org/pods/OAuth2)
