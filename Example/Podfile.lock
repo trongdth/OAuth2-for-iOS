@@ -1,5 +1,5 @@
 PODS:
-  - OAuth2 (0.1.0)
+  - OAuth2 (0.2.0)
 
 DEPENDENCIES:
   - OAuth2 (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  OAuth2: 7f0da066cde6a774c2aa5bbbfde7e319a131bd20
+  OAuth2: 373632a245c8f115edd2277fedcaa18f2a356352
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 44af1fc01a4be896559a7806d3fe7f51e4aed980
+
+COCOAPODS: 1.2.0

@@ -23,20 +23,6 @@
 
 #pragma mark - init
 
-- (id)init;
-{
-    if (self = [super initWithNibName:@"OAuthRequestController" bundle:[NSBundle bundleForClass:[OAuthRequestController class]]]) {
-        oauthClient = [[LROAuth2Client alloc] initWithClientID:@"76413906-82f8-4bee-954f-1439de58c485"
-                                                        secret:@"30e69d27-d0c7-42a1-8673-e33b55d395e3" redirectURL:[NSURL URLWithString:@"robotbase://authorize"]];
-        oauthClient.userURL  = [NSURL URLWithString:@"https://graph.api.smartthings.com/oauth/authorize"];
-        oauthClient.tokenURL = [NSURL URLWithString:@"https://graph.api.smartthings.com/oauth/token"];
-        [self initObj];
-        _dictValues = [NSMutableDictionary dictionary];
-        
-    }
-    return self;
-}
-
 - (id)initWithDict:(NSDictionary *)dict {
     if (self = [super initWithNibName:@"OAuthRequestController" bundle:[NSBundle bundleForClass:[OAuthRequestController class]]]) {
         oauthClient = [[LROAuth2Client alloc] initWithClientID:[dict objectForKey:kOAuth_ClientId]
@@ -98,7 +84,7 @@
     if ([_delegate respondsToSelector:@selector(didAuthorized:)]) {
         [_dictValues setObject:VALID(client.accessToken, NSString)?client.accessToken:@"" forKey:kOAuth_AccessToken];
         [_dictValues setObject:VALID(client.refreshToken, NSString)?client.refreshToken:@"" forKey:kOAuth_RefreshToken];
-        [_dictValues setObject:VALID(client.expiresAt, NSString)?client.expiresAt:@"" forKey:kOAuth_ExpiredDate];
+        [_dictValues setObject:VALID(client.expiresAt, NSDate)?client.expiresAt:@"" forKey:kOAuth_ExpiredDate];
         
         [_delegate didAuthorized:_dictValues];
     }

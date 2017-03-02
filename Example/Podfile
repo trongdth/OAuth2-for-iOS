@@ -1,12 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'OAuth2_Example', :exclusive => true do
+target 'OAuth2_Example' do
   pod "OAuth2", :path => "../"
 end
 
-target 'OAuth2_Tests', :exclusive => true do
+target 'OAuth2_Tests' do
   pod "OAuth2", :path => "../"
-
-  
 end
