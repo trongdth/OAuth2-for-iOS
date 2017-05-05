@@ -65,16 +65,16 @@ oauthController.delegate = self;
 
 ## Installation
 
-1. Pod
-OAuth2 is available through [CocoaPods](http://cocoapods.org). To install
+1. Pod:
++ OAuth2 is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "OAuth2"
 ```
 
-2. Carthage
-For Carthage installation:
+2. Carthage:
++ For Carthage installation:
 
 ```ruby
 github "https://github.com/trongdth/OAuth2-for-iOS" "master"
