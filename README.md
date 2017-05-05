@@ -6,6 +6,7 @@ It's a library on iOS which is suitable for OAuth2. It supports authorization al
 [![Version](https://img.shields.io/cocoapods/v/OAuth2.svg?style=flat)](http://cocoapods.org/pods/OAuth2)
 [![License](https://img.shields.io/cocoapods/l/OAuth2.svg?style=flat)](http://cocoapods.org/pods/OAuth2)
 [![Platform](https://img.shields.io/cocoapods/p/OAuth2.svg?style=flat)](http://cocoapods.org/pods/OAuth2)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## OVERVIEW
 
@@ -64,12 +65,21 @@ oauthController.delegate = self;
 
 ## Installation
 
+1. Pod
 OAuth2 is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "OAuth2"
 ```
+
+2. Carthage
+For Carthage installation:
+
+```ruby
+github "https://github.com/trongdth/OAuth2-for-iOS" "master"
+```
+
 
 ## Author
 
