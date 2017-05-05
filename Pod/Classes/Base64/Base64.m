@@ -54,7 +54,7 @@
     
     if (![NSData instancesRespondToSelector:@selector(initWithBase64EncodedString:options:)])
     {
-        decoded = [[self alloc] initWithBase64Encoding:[string stringByReplacingOccurrencesOfString:@"[^A-Za-z0-9+/=]" withString:@"" options:NSRegularExpressionSearch range:NSMakeRange(0, [string length])]];
+        decoded = [[self alloc] initWithBase64EncodedString:[string stringByReplacingOccurrencesOfString:@"[^A-Za-z0-9+/=]" withString:@"" options:NSRegularExpressionSearch range:NSMakeRange(0, [string length])] options:0];
     }
     else
     
@@ -77,7 +77,7 @@
     
     if (![NSData instancesRespondToSelector:@selector(base64EncodedStringWithOptions:)])
     {
-        encoded = [self base64Encoding];
+        encoded = [self base64EncodedString];
     }
     else
     
