@@ -13,6 +13,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSMutableDictionary *dictService = [NSMutableDictionary dictionary];
+    [dictService setObject:@"https://www.fitbit.com/oauth2/authorize" forKey:kOAuth_AuthorizeURL];
+    [dictService setObject:@"https://api.fitbit.com/oauth2/token" forKey:kOAuth_TokenURL];
+    [dictService setObject:@"227Y5B" forKey:kOAuth_ClientId];
+    [dictService setObject:@"599b53fa8568f23b4990dce315832577" forKey:kOAuth_Secret];
+    [dictService setObject:@"robotbase://authorize" forKey:kOAuth_Callback];
+    [dictService setObject:@"activity heartrate location nutrition profile settings sleep social weight" forKey:kOAuth_Scope];
+    
+    OAuthRequestController *oauthController = [[OAuthRequestController alloc] initWithDict:dictService];
+    oauthController.delegate = self;
+    
+    self.window.rootViewController = oauthController;
+    
     return YES;
 }
 
@@ -41,6 +54,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - OAuthRequestControllerDelegate method
+
+- (void)didAuthorized:(NSDictionary *)dictResponse {
+    NSLog(@"%@", dictResponse);
+}
+
+- (void)didCancel {
+    self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"MSViewController"];
 }
 
 @end

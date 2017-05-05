@@ -69,12 +69,6 @@
     webView.delegate = nil;
 }
 
-- (IBAction)btnCancelTouched:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
-}
-
 - (void)refreshAccessToken:(LROAuth2AccessToken *)accessToken
 {
     [oauthClient refreshAccessToken:accessToken];
@@ -89,6 +83,19 @@
         [_delegate didAuthorized:_dictValues];
     }
 
+}
+
+#pragma mark - IBAction methods
+
+- (IBAction)btnCancelTouched:(id)sender {
+    if ([_delegate respondsToSelector:@selector(didCancel)]) {
+        [_delegate didCancel];
+        
+    } else {
+        [self dismissViewControllerAnimated:YES completion:^{
+
+        }];
+    }
 }
 
 #pragma mark -

@@ -2,7 +2,7 @@
 //  OAuth2_ExampleUITests.m
 //  OAuth2_ExampleUITests
 //
-//  Created by Trong_iOS on 3/2/17.
+//  Created by Trong_iOS on 5/5/17.
 //  Copyright © 2017 Trong Dinh. All rights reserved.
 //
 
@@ -32,9 +32,36 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testFitbitEmailAndPwdShouldBeExists {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    XCUIElementQuery *webViewsQuery = [[XCUIApplication alloc] init].webViews;
+    XCUIElement *emailTextField = webViewsQuery.textFields[@"Email"];
+    [emailTextField tap];
+    
+    XCUIElement *passwordSecureTextField = webViewsQuery.secureTextFields[@"Password"];
+    [passwordSecureTextField tap];
+    
+    
+    XCTAssert(emailTextField.exists);
+    XCTAssert(passwordSecureTextField.exists);
+}
+
+- (void)testLifxEmailAndPwdShouldBeExists {
+    // Use recording to get started writing UI tests.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    XCUIElement *lifxCloudElement = [[XCUIApplication alloc] init].webViews.otherElements[@"LIFX Cloud"];
+    XCUIElement *textField = [lifxCloudElement childrenMatchingType:XCUIElementTypeTextField].element;
+    [textField tap];
+    
+    XCUIElement *secureTextField = [lifxCloudElement childrenMatchingType:XCUIElementTypeSecureTextField].element;
+    [secureTextField tap];
+    
+    XCTAssert(textField.exists);
+    XCTAssert(secureTextField.exists);
+
 }
 
 @end

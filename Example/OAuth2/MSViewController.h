@@ -6,10 +6,9 @@
 //  Copyright (c) 2015 Trong Dinh. All rights reserved.
 //
 
-#import "OAuthRequestController.h"
-
 @import UIKit;
-
-@interface MSViewController : UIViewController<OAuthRequestControllerDelegate>
+@interface MSViewController : UIViewController {
+    
+}
 
 @end

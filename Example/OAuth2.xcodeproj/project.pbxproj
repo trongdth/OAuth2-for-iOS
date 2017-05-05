@@ -22,7 +22,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		B192A8091E68311800CC7007 /* OAuth2_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B192A8081E68311800CC7007 /* OAuth2_ExampleUITests.m */; };
+		B1D013DE1EBC778A006EDC87 /* OAuth2_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D013DD1EBC778A006EDC87 /* OAuth2_ExampleUITests.m */; };
+		B1D013E81EBC7F62006EDC87 /* applications.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D013E71EBC7F62006EDC87 /* applications.plist */; };
 		C3ADE74B3B3151FC6CF4602B /* Pods_OAuth2_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C38773C1843144D0DAA139 /* Pods_OAuth2_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +35,7 @@
 			remoteGlobalIDString = 6003F589195388D20070C39A;
 			remoteInfo = OAuth2;
 		};
-		B192A80B1E68311800CC7007 /* PBXContainerItemProxy */ = {
+		B1D013E01EBC778A006EDC87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
@@ -70,9 +71,10 @@
 		7E29E2355EFDD94F34E19003 /* Pods-OAuth2_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuth2_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuth2_Example/Pods-OAuth2_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		989D378F37FA0B2A4BE3B23C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		B192A8061E68311800CC7007 /* OAuth2_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuth2_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B192A8081E68311800CC7007 /* OAuth2_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuth2_ExampleUITests.m; sourceTree = "<group>"; };
-		B192A80A1E68311800CC7007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1D013DB1EBC778A006EDC87 /* OAuth2_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuth2_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D013DD1EBC778A006EDC87 /* OAuth2_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuth2_ExampleUITests.m; sourceTree = "<group>"; };
+		B1D013DF1EBC778A006EDC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1D013E71EBC7F62006EDC87 /* applications.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = applications.plist; sourceTree = "<group>"; };
 		BECF610E5EE4B5B103FBFB29 /* Pods-OAuth2_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuth2_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuth2_Tests/Pods-OAuth2_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E00B56ADC2867322392AFD28 /* OAuth2.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OAuth2.podspec; path = ../OAuth2.podspec; sourceTree = "<group>"; };
 		F8C38773C1843144D0DAA139 /* Pods_OAuth2_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuth2_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +103,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B192A8031E68311800CC7007 /* Frameworks */ = {
+		B1D013D81EBC778A006EDC87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +130,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for OAuth2 */,
 				6003F5B5195388D20070C39A /* Tests */,
-				B192A8071E68311800CC7007 /* OAuth2_ExampleUITests */,
+				B1D013DC1EBC778A006EDC87 /* OAuth2_ExampleUITests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				0109ABD4BBC73561CA361E48 /* Pods */,
@@ -140,7 +142,7 @@
 			children = (
 				6003F58A195388D20070C39A /* OAuth2_Example.app */,
 				6003F5AE195388D20070C39A /* OAuth2_Tests.xctest */,
-				B192A8061E68311800CC7007 /* OAuth2_ExampleUITests.xctest */,
+				B1D013DB1EBC778A006EDC87 /* OAuth2_ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +170,7 @@
 				6003F5A6195388D20070C39A /* MSViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				B1D013E71EBC7F62006EDC87 /* applications.plist */,
 			);
 			name = "Example for OAuth2";
 			path = OAuth2;
@@ -213,11 +216,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		B192A8071E68311800CC7007 /* OAuth2_ExampleUITests */ = {
+		B1D013DC1EBC778A006EDC87 /* OAuth2_ExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B192A8081E68311800CC7007 /* OAuth2_ExampleUITests.m */,
-				B192A80A1E68311800CC7007 /* Info.plist */,
+				B1D013DD1EBC778A006EDC87 /* OAuth2_ExampleUITests.m */,
+				B1D013DF1EBC778A006EDC87 /* Info.plist */,
 			);
 			path = OAuth2_ExampleUITests;
 			sourceTree = "<group>";
@@ -266,22 +269,22 @@
 			productReference = 6003F5AE195388D20070C39A /* OAuth2_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B192A8051E68311800CC7007 /* OAuth2_ExampleUITests */ = {
+		B1D013DA1EBC778A006EDC87 /* OAuth2_ExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B192A80F1E68311800CC7007 /* Build configuration list for PBXNativeTarget "OAuth2_ExampleUITests" */;
+			buildConfigurationList = B1D013E21EBC778A006EDC87 /* Build configuration list for PBXNativeTarget "OAuth2_ExampleUITests" */;
 			buildPhases = (
-				B192A8021E68311800CC7007 /* Sources */,
-				B192A8031E68311800CC7007 /* Frameworks */,
-				B192A8041E68311800CC7007 /* Resources */,
+				B1D013D71EBC778A006EDC87 /* Sources */,
+				B1D013D81EBC778A006EDC87 /* Frameworks */,
+				B1D013D91EBC778A006EDC87 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B192A80C1E68311800CC7007 /* PBXTargetDependency */,
+				B1D013E11EBC778A006EDC87 /* PBXTargetDependency */,
 			);
 			name = OAuth2_ExampleUITests;
 			productName = OAuth2_ExampleUITests;
-			productReference = B192A8061E68311800CC7007 /* OAuth2_ExampleUITests.xctest */;
+			productReference = B1D013DB1EBC778A006EDC87 /* OAuth2_ExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -302,9 +305,9 @@
 						DevelopmentTeam = J9948BJ3RH;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
-					B192A8051E68311800CC7007 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = J9948BJ3RH;
+					B1D013DA1EBC778A006EDC87 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 54DJVWMJCC;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -325,7 +328,7 @@
 			targets = (
 				6003F589195388D20070C39A /* OAuth2_Example */,
 				6003F5AD195388D20070C39A /* OAuth2_Tests */,
-				B192A8051E68311800CC7007 /* OAuth2_ExampleUITests */,
+				B1D013DA1EBC778A006EDC87 /* OAuth2_ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -338,6 +341,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				B1D013E81EBC7F62006EDC87 /* applications.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +353,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B192A8041E68311800CC7007 /* Resources */ = {
+		B1D013D91EBC778A006EDC87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,11 +474,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B192A8021E68311800CC7007 /* Sources */ = {
+		B1D013D71EBC778A006EDC87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B192A8091E68311800CC7007 /* OAuth2_ExampleUITests.m in Sources */,
+				B1D013DE1EBC778A006EDC87 /* OAuth2_ExampleUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,10 +490,10 @@
 			target = 6003F589195388D20070C39A /* OAuth2_Example */;
 			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
 		};
-		B192A80C1E68311800CC7007 /* PBXTargetDependency */ = {
+		B1D013E11EBC778A006EDC87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* OAuth2_Example */;
-			targetProxy = B192A80B1E68311800CC7007 /* PBXContainerItemProxy */;
+			targetProxy = B1D013E01EBC778A006EDC87 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -694,15 +698,16 @@
 			};
 			name = Release;
 		};
-		B192A80D1E68311800CC7007 /* Debug */ = {
+		B1D013E31EBC778A006EDC87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = J9948BJ3RH;
+				DEVELOPMENT_TEAM = 54DJVWMJCC;
 				INFOPLIST_FILE = OAuth2_ExampleUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autonomous.OAuth2-ExampleUITests";
@@ -711,16 +716,17 @@
 			};
 			name = Debug;
 		};
-		B192A80E1E68311800CC7007 /* Release */ = {
+		B1D013E41EBC778A006EDC87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = J9948BJ3RH;
+				DEVELOPMENT_TEAM = 54DJVWMJCC;
 				INFOPLIST_FILE = OAuth2_ExampleUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autonomous.OAuth2-ExampleUITests";
@@ -759,11 +765,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B192A80F1E68311800CC7007 /* Build configuration list for PBXNativeTarget "OAuth2_ExampleUITests" */ = {
+		B1D013E21EBC778A006EDC87 /* Build configuration list for PBXNativeTarget "OAuth2_ExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B192A80D1E68311800CC7007 /* Debug */,
-				B192A80E1E68311800CC7007 /* Release */,
+				B1D013E31EBC778A006EDC87 /* Debug */,
+				B1D013E41EBC778A006EDC87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -13,7 +13,11 @@
 
 @protocol OAuthRequestControllerDelegate <NSObject>
 
+@required
 - (void)didAuthorized:(NSDictionary *)dictResponse;
+
+@optional
+- (void)didCancel;
 
 @end
 
@@ -32,4 +36,5 @@
 - (id)initWithDict:(NSDictionary *)dict;
 - (IBAction)btnCancelTouched:(id)sender;
 - (void)refreshAccessToken:(LROAuth2AccessToken *)accessToken;
+
 @end

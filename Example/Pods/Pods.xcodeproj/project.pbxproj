@@ -33,9 +33,7 @@
 		C0E80D7EBA84C20ED342A1F7045705C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		D26CC0623FFE573D90007DA3170C5A37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		D39A4C9DD84CB33C14B39844F98EDA6D /* LROAuth2Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F3C7BBA2799DF2D514182FB63BB521 /* LROAuth2Client.m */; };
-		D699DEE2B42263C1C7154BFD4D8EE041 /* OAuth2.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8698A751F4525330ACE578218E279A0 /* OAuth2.bundle */; };
 		F2E340697D0102374DD9D1A242780429 /* NSURL+QueryInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B30CF3FA50C652852FE168FF80DBBF8 /* NSURL+QueryInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5D71C164E8518DC117DAAB157F60C6C /* OAuthRequestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8849D8183564BD21070D1840A0C06D3E /* OAuthRequestController.xib */; };
 		F8C27945F32A453015818BEDCC13CAFF /* OAuthRequestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689358FF1061915F33EEE537CF634961 /* OAuthRequestController.m */; };
 		FACEAFBA59D482DF1D5C1A40FC0EFCE4 /* OAuthKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 836FA8C634448C92315C95F7A7A0DF61 /* OAuthKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDB0FFE5302E29DCEEFC837AA841F3C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
@@ -48,13 +46,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = D86E2758D2FD5E2DE95E3CF92D04471F;
 			remoteInfo = OAuth2;
-		};
-		E50294F97333877ECA09740114FCC83F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F0F9A8C8D954FF889CB0D0B77021807B;
-			remoteInfo = "OAuth2-OAuth2";
 		};
 		EADACCD25B6CD1290828AB93AA5B06D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -69,7 +60,7 @@
 		031980C323A7B7DEE1521B7DF9B9533F /* Pods-OAuth2_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OAuth2_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		09A6768DD96FC718316A5D06D6A5FEA7 /* Pods-OAuth2_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OAuth2_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0C19D92BD47E1929C8CBAB6FBEDA7ADE /* Pods-OAuth2_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OAuth2_Example-umbrella.h"; sourceTree = "<group>"; };
-		0EC54ACEBEB5C0599F8513FADA6075C4 /* Pods-OAuth2_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OAuth2_Example.modulemap"; sourceTree = "<group>"; };
+		0EC54ACEBEB5C0599F8513FADA6075C4 /* Pods-OAuth2_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OAuth2_Example.modulemap"; sourceTree = "<group>"; };
 		1037935052D88F84AE7510E0D491A255 /* Pods-OAuth2_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OAuth2_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		13A6CB336CEE48F97EB1925C13BA8286 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279F1E69951FFE34F1C951EE28CF54CE /* Pods-OAuth2_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OAuth2_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -83,7 +74,7 @@
 		4B30CF3FA50C652852FE168FF80DBBF8 /* NSURL+QueryInspector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSURL+QueryInspector.h"; sourceTree = "<group>"; };
 		4C2E98B0BE536CB5E0D29177B1C825A0 /* Base64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		67391D765D2D69123C4D453C114A3BFF /* OAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OAuth2.framework; path = OAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67391D765D2D69123C4D453C114A3BFF /* OAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		689358FF1061915F33EEE537CF634961 /* OAuthRequestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OAuthRequestController.m; sourceTree = "<group>"; };
 		6FD16F1771BE4FFD10386FF3218902EB /* NSDictionary+QueryString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+QueryString.m"; sourceTree = "<group>"; };
 		7270F8130B223BE80661FAE8C9E1249E /* LRURLRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LRURLRequestOperation.m; sourceTree = "<group>"; };
@@ -94,17 +85,17 @@
 		836FA8C634448C92315C95F7A7A0DF61 /* OAuthKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OAuthKey.h; sourceTree = "<group>"; };
 		843BA100E324168CB9DFB1E6F2F2F71B /* LROAuth2Client.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LROAuth2Client.h; sourceTree = "<group>"; };
 		8849D8183564BD21070D1840A0C06D3E /* OAuthRequestController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = OAuthRequestController.xib; sourceTree = "<group>"; };
-		88DE08EE5420850CC4E5BB77DBDFA120 /* OAuth2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OAuth2.modulemap; sourceTree = "<group>"; };
+		88DE08EE5420850CC4E5BB77DBDFA120 /* OAuth2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = OAuth2.modulemap; sourceTree = "<group>"; };
 		8CD1AC8F19515572379874ABA199FD70 /* LROAuth2ClientDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LROAuth2ClientDelegate.h; sourceTree = "<group>"; };
 		8E6264785E620BE07DBEDE2A9194B411 /* Pods-OAuth2_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OAuth2_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9194A270FB828AA60B954793F46D8031 /* Pods-OAuth2_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OAuth2_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93049746C7031F1628C13A9EBF67FFBF /* OAuth2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuth2-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94F3C7BBA2799DF2D514182FB63BB521 /* LROAuth2Client.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LROAuth2Client.m; sourceTree = "<group>"; };
 		952363EE6DF0985DFA380AEA425CE47A /* NSURL+QueryInspector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSURL+QueryInspector.m"; sourceTree = "<group>"; };
 		B07F5A75A306C409FE5C8D6E9B06F4DC /* OAuth2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuth2-umbrella.h"; sourceTree = "<group>"; };
 		BB85399FBF51A4751478A8308581F2B9 /* OAuthRequestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OAuthRequestController.h; sourceTree = "<group>"; };
-		BF34F1068A710F58C96F1748A8B8218A /* Pods_OAuth2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OAuth2_Tests.framework; path = "Pods-OAuth2_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF34F1068A710F58C96F1748A8B8218A /* Pods_OAuth2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuth2_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8193CEE9D81916618E036DA8976EC39 /* Pods-OAuth2_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OAuth2_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		D246460410D3A794593B3BA45975D1BC /* OAuth2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OAuth2-dummy.m"; sourceTree = "<group>"; };
 		D3C9C3A01B081075AA44F8ADDAD9E843 /* LROAuth2AccessToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LROAuth2AccessToken.m; sourceTree = "<group>"; };
@@ -112,13 +103,12 @@
 		E205971E881F35CF03760E3A31917E3C /* LROAuth2AccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LROAuth2AccessToken.h; sourceTree = "<group>"; };
 		E7A1CFE2A6D34DFD0C583AD4DE89E43D /* Pods-OAuth2_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OAuth2_Example-dummy.m"; sourceTree = "<group>"; };
 		EA7B0DF027FAD793942C4B1BDF232CD1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED4BCE9CA00984ED5A4260F177AB5EFC /* Pods-OAuth2_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OAuth2_Tests.modulemap"; sourceTree = "<group>"; };
+		ED4BCE9CA00984ED5A4260F177AB5EFC /* Pods-OAuth2_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-OAuth2_Tests.modulemap"; sourceTree = "<group>"; };
 		EFFF684D76856BF2C4F1F608F398A570 /* LRURLRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LRURLRequestOperation.h; sourceTree = "<group>"; };
 		F1B5D8F3655A5D262F423419E6609EE9 /* Pods-OAuth2_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OAuth2_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F34B22D3C10D1402555B8446B76550E3 /* Pods-OAuth2_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OAuth2_Tests-resources.sh"; sourceTree = "<group>"; };
 		F59B7EB878CA09D091C446DA500E9454 /* NSDictionary+QueryString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+QueryString.h"; sourceTree = "<group>"; };
-		F85657FB0E10D58C4603EFCD2F6A4389 /* Pods_OAuth2_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OAuth2_Example.framework; path = "Pods-OAuth2_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8698A751F4525330ACE578218E279A0 /* OAuth2.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = OAuth2.bundle; path = OAuth2.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85657FB0E10D58C4603EFCD2F6A4389 /* Pods_OAuth2_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuth2_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAED33258F0F278DDDE4A9738F2C049C /* Validations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Validations.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,13 +127,6 @@
 			files = (
 				C0E80D7EBA84C20ED342A1F7045705C0 /* Foundation.framework in Frameworks */,
 				FDB0FFE5302E29DCEEFC837AA841F3C2 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B772445116A07BDA09ED246267443381 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,14 +172,12 @@
 			children = (
 				8849D8183564BD21070D1840A0C06D3E /* OAuthRequestController.xib */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
 		77D1FA79B69D7E6ACE7A470CA1E452E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8698A751F4525330ACE578218E279A0 /* OAuth2.bundle */,
 				67391D765D2D69123C4D453C114A3BFF /* OAuth2.framework */,
 				F85657FB0E10D58C4603EFCD2F6A4389 /* Pods_OAuth2_Example.framework */,
 				BF34F1068A710F58C96F1748A8B8218A /* Pods_OAuth2_Tests.framework */,
@@ -247,7 +228,6 @@
 				4B30CF3FA50C652852FE168FF80DBBF8 /* NSURL+QueryInspector.h */,
 				952363EE6DF0985DFA380AEA425CE47A /* NSURL+QueryInspector.m */,
 			);
-			name = LROAuth2Client;
 			path = LROAuth2Client;
 			sourceTree = "<group>";
 		};
@@ -289,7 +269,6 @@
 				CCA1D91131E5A3C574C8BF81476CD193 /* Base64 */,
 				7A53F9E2538C86164E14EC7BFB7ABCBC /* LROAuth2Client */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -299,7 +278,6 @@
 				DDE51A710AA4C0CE7A6C0A6DA2F6212F /* Base64.h */,
 				4C2E98B0BE536CB5E0D29177B1C825A0 /* Base64.m */,
 			);
-			name = Base64;
 			path = Base64;
 			sourceTree = "<group>";
 		};
@@ -328,7 +306,6 @@
 			children = (
 				C5B59C83B770F9F24C3669B614189BCE /* Classes */,
 			);
-			name = Pod;
 			path = Pod;
 			sourceTree = "<group>";
 		};
@@ -337,7 +314,6 @@
 			children = (
 				616A43B38CE163E4DC4B504782301087 /* Classes */,
 			);
-			name = Pod;
 			path = Pod;
 			sourceTree = "<group>";
 		};
@@ -445,29 +421,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				66A8A5E93C76B77F117925B711E0FC54 /* PBXTargetDependency */,
 			);
 			name = OAuth2;
 			productName = OAuth2;
 			productReference = 67391D765D2D69123C4D453C114A3BFF /* OAuth2.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		F0F9A8C8D954FF889CB0D0B77021807B /* OAuth2-OAuth2 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 27E492F02F1D82D3E78102EA65F5134C /* Build configuration list for PBXNativeTarget "OAuth2-OAuth2" */;
-			buildPhases = (
-				340543C0162B6A2A6407812E9CD5E6BB /* Sources */,
-				B772445116A07BDA09ED246267443381 /* Frameworks */,
-				B7F83EFF1E575FCED857A6C0D4FC4B5B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "OAuth2-OAuth2";
-			productName = "OAuth2-OAuth2";
-			productReference = F8698A751F4525330ACE578218E279A0 /* OAuth2.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -491,7 +449,6 @@
 			projectRoot = "";
 			targets = (
 				D86E2758D2FD5E2DE95E3CF92D04471F /* OAuth2 */,
-				F0F9A8C8D954FF889CB0D0B77021807B /* OAuth2-OAuth2 */,
 				62F99DF898474F173CC218062E6E32A4 /* Pods-OAuth2_Example */,
 				445F734037A5A3E571797F5E32F691D9 /* Pods-OAuth2_Tests */,
 			);
@@ -503,16 +460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D699DEE2B42263C1C7154BFD4D8EE041 /* OAuth2.bundle in Resources */,
 				918FF8EC03A942F3F565FA878333BDDA /* OAuthRequestController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B7F83EFF1E575FCED857A6C0D4FC4B5B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5D71C164E8518DC117DAAB157F60C6C /* OAuthRequestController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,13 +472,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				385869537E1D6BF57B7111261FE23CA7 /* Pods-OAuth2_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		340543C0162B6A2A6407812E9CD5E6BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,12 +502,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		66A8A5E93C76B77F117925B711E0FC54 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "OAuth2-OAuth2";
-			target = F0F9A8C8D954FF889CB0D0B77021807B /* OAuth2-OAuth2 */;
-			targetProxy = E50294F97333877ECA09740114FCC83F /* PBXContainerItemProxy */;
-		};
 		A995E17DD9E3708B09CBCDE6A9DC1F01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OAuth2;
@@ -736,23 +671,6 @@
 			};
 			name = Release;
 		};
-		93AAEE585E8AB286ACD9E12686079251 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A9A5E15926D9A3259F276E30D9AF282 /* OAuth2.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OAuth2";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/OAuth2/ResourceBundle-OAuth2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = OAuth2;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		B4A9956C0FB6C54C2F10872A410FB5B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09A6768DD96FC718316A5D06D6A5FEA7 /* Pods-OAuth2_Example.debug.xcconfig */;
@@ -818,23 +736,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		DF46F0B754D374C66A3326D7FBA46FA9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A9A5E15926D9A3259F276E30D9AF282 /* OAuth2.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/OAuth2";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/OAuth2/ResourceBundle-OAuth2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = OAuth2;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
 		};
 		ED7D8980BB980F9B4BF0932ED4B84E0E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -905,15 +806,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27E492F02F1D82D3E78102EA65F5134C /* Build configuration list for PBXNativeTarget "OAuth2-OAuth2" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93AAEE585E8AB286ACD9E12686079251 /* Debug */,
-				DF46F0B754D374C66A3326D7FBA46FA9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
