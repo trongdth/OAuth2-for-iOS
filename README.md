@@ -77,7 +77,7 @@ pod "OAuth2"
 + For Carthage installation:
 
 ```ruby
-github "https://github.com/trongdth/OAuth2-for-iOS" "master"
+github "trongdth/OAuth2-for-iOS" "master"
 ```
 
 

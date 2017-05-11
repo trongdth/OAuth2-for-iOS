@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,6 +27,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
+        </scene>
+        <!--Apps View Controller-->
+        <scene sceneID="jdC-ne-2TI">
+            <objects>
+                <viewController storyboardIdentifier="MSAppsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Xm-WU-29g" customClass="MSAppsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SXS-aK-HK9"/>
+                        <viewControllerLayoutGuide type="bottom" id="7bz-RQ-rmV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BHO-4U-KrD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fcR-Y6-AOl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Xm-WU-29g" id="sJb-5M-cbr"/>
+                                    <outlet property="delegate" destination="8Xm-WU-29g" id="Ed3-Z2-5tM"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fcR-Y6-AOl" firstAttribute="leading" secondItem="BHO-4U-KrD" secondAttribute="leadingMargin" constant="-16" id="MX9-Mi-0hV"/>
+                            <constraint firstItem="7bz-RQ-rmV" firstAttribute="top" secondItem="fcR-Y6-AOl" secondAttribute="bottom" id="Y84-Gx-S6T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fcR-Y6-AOl" secondAttribute="trailing" constant="-16" id="uop-cV-8Xr"/>
+                            <constraint firstItem="fcR-Y6-AOl" firstAttribute="top" secondItem="SXS-aK-HK9" secondAttribute="bottom" constant="-64" id="vnG-AT-mFy"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tblView" destination="fcR-Y6-AOl" id="EkG-X3-gh6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z5G-rX-Geh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
         </scene>
     </scenes>
 </document>

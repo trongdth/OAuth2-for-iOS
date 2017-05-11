@@ -36,31 +36,57 @@
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
-    XCUIElementQuery *webViewsQuery = [[XCUIApplication alloc] init].webViews;
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.tables.staticTexts[@"fitbit"] tap];
+    
+    XCUIElementQuery *webViewsQuery = app.webViews;
     XCUIElement *emailTextField = webViewsQuery.textFields[@"Email"];
-    [emailTextField tap];
     
-    XCUIElement *passwordSecureTextField = webViewsQuery.secureTextFields[@"Password"];
-    [passwordSecureTextField tap];
-    
+    NSPredicate *exists = [NSPredicate predicateWithFormat:@"exists == 1"];
+    [self expectationForPredicate:exists evaluatedWithObject:emailTextField handler:nil];
+    [self waitForExpectationsWithTimeout:10 handler:nil];
     
     XCTAssert(emailTextField.exists);
+    
+    XCUIElement *passwordSecureTextField = webViewsQuery.secureTextFields[@"Password"];
+    [self expectationForPredicate:exists evaluatedWithObject:passwordSecureTextField handler:nil];
+    [self waitForExpectationsWithTimeout:10 handler:nil];
+    
     XCTAssert(passwordSecureTextField.exists);
+    
+    XCUIElement *btnCancel = app.navigationBars[@"Authorize"].buttons[@"Cancel"];
+    XCTAssertNotNil(btnCancel);
+    
 }
 
 - (void)testLifxEmailAndPwdShouldBeExists {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
-    XCUIElement *lifxCloudElement = [[XCUIApplication alloc] init].webViews.otherElements[@"LIFX Cloud"];
-    XCUIElement *textField = [lifxCloudElement childrenMatchingType:XCUIElementTypeTextField].element;
-    [textField tap];
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.tables.staticTexts[@"lifx"] tap];
     
+    XCUIElementQuery *webViewsQuery = app.webViews;
+    [webViewsQuery.staticTexts[@"Already set-up your LIFX? Sign in to your account to continue."] swipeUp];
+    
+    
+    XCUIElement *lifxCloudElement = webViewsQuery.otherElements[@"LIFX Cloud"];
+    XCUIElement *textField = [lifxCloudElement childrenMatchingType:XCUIElementTypeTextField].element;
+    NSPredicate *exists = [NSPredicate predicateWithFormat:@"exists == 1"];
+    [self expectationForPredicate:exists evaluatedWithObject:textField handler:nil];
+    [self waitForExpectationsWithTimeout:10 handler:nil];
+    [textField tap];
+
     XCUIElement *secureTextField = [lifxCloudElement childrenMatchingType:XCUIElementTypeSecureTextField].element;
+    [self expectationForPredicate:exists evaluatedWithObject:secureTextField handler:nil];
+    [self waitForExpectationsWithTimeout:10 handler:nil];
     [secureTextField tap];
     
     XCTAssert(textField.exists);
     XCTAssert(secureTextField.exists);
+    
+    XCUIElement *btnCancel = app.navigationBars[@"Authorize"].buttons[@"Cancel"];
+    XCTAssertNotNil(btnCancel);
 
 }
 

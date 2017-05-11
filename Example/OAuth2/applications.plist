@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>lifx</string>
+		<key>kOAuth_AuthorizeURL</key>
+		<string>https://cloud.lifx.com/oauth/authorize</string>
+		<key>kOAuth_TokenURL</key>
+		<string>https://cloud.lifx.com/oauth/token</string>
+		<key>kOAuth_ClientId</key>
+		<string>4c40b376854862c7b1f14558568ca97310ac1ce4fe9e1d22960a0638ad73cc12</string>
+		<key>kOAuth_Secret</key>
+		<string>31c91f3ec95053eb2c04be37d08f5b2271564f876620c6f8d926bed2a178c02a</string>
+		<key>kOAuth_Callback</key>
+		<string>https://www.autonomous.ai/oauth_tool/callback</string>
+		<key>kOAuth_Scope</key>
+		<string>remote_control:all</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>fitbit</string>
+		<key>kOAuth_AuthorizeURL</key>
+		<string>https://www.fitbit.com/oauth2/authorize</string>
+		<key>kOAuth_TokenURL</key>
+		<string>https://api.fitbit.com/oauth2/token</string>
+		<key>kOAuth_ClientId</key>
+		<string>227Y5B</string>
+		<key>kOAuth_Secret</key>
+		<string>599b53fa8568f23b4990dce315832577</string>
+		<key>kOAuth_Callback</key>
+		<string>robotbase://authorize</string>
+		<key>kOAuth_Scope</key>
+		<string>activity heartrate location nutrition profile settings sleep social weight</string>
+	</dict>
+</array>
+</plist>

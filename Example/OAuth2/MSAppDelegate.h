@@ -7,9 +7,8 @@
 //
 
 @import UIKit;
-#import <OAuth2/OAuthRequestController.h>
 
-@interface MSAppDelegate : UIResponder <UIApplicationDelegate, OAuthRequestControllerDelegate>
+@interface MSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

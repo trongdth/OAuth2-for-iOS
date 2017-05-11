@@ -7,6 +7,7 @@
 //
 
 #import "MSViewController.h"
+#import "MSAppsViewController.h"
 
 @interface MSViewController ()
 
@@ -20,6 +21,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    _arrRetains = [NSMutableArray array];
+    
+    MSAppsViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"MSAppsViewController"];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self.view addSubview:nav.view];
+    
+    [_arrRetains addObject:nav];
 }
 
 - (void)didReceiveMemoryWarning

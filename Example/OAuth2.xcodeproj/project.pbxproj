@@ -22,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		B11911AE1EC335670057A17D /* MSAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B11911AD1EC335670057A17D /* MSAppsViewController.m */; };
 		B1D013DE1EBC778A006EDC87 /* OAuth2_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D013DD1EBC778A006EDC87 /* OAuth2_ExampleUITests.m */; };
 		B1D013E81EBC7F62006EDC87 /* applications.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1D013E71EBC7F62006EDC87 /* applications.plist */; };
 		C3ADE74B3B3151FC6CF4602B /* Pods_OAuth2_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C38773C1843144D0DAA139 /* Pods_OAuth2_Example.framework */; };
@@ -71,6 +72,8 @@
 		7E29E2355EFDD94F34E19003 /* Pods-OAuth2_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuth2_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuth2_Example/Pods-OAuth2_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		989D378F37FA0B2A4BE3B23C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B11911AC1EC335670057A17D /* MSAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAppsViewController.h; sourceTree = "<group>"; };
+		B11911AD1EC335670057A17D /* MSAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAppsViewController.m; sourceTree = "<group>"; };
 		B1D013DB1EBC778A006EDC87 /* OAuth2_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuth2_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D013DD1EBC778A006EDC87 /* OAuth2_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuth2_ExampleUITests.m; sourceTree = "<group>"; };
 		B1D013DF1EBC778A006EDC87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 				6003F59C195388D20070C39A /* MSAppDelegate.h */,
 				6003F59D195388D20070C39A /* MSAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				B11911AC1EC335670057A17D /* MSAppsViewController.h */,
+				B11911AD1EC335670057A17D /* MSAppsViewController.m */,
 				6003F5A5195388D20070C39A /* MSViewController.h */,
 				6003F5A6195388D20070C39A /* MSViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -460,6 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B11911AE1EC335670057A17D /* MSAppsViewController.m in Sources */,
 				6003F59E195388D20070C39A /* MSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MSViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -772,6 +778,7 @@
 				B1D013E41EBC778A006EDC87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

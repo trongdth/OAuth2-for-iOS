@@ -11,4 +11,6 @@
     
 }
 
+@property (nonatomic, strong) NSMutableArray *arrRetains;
+
 @end
